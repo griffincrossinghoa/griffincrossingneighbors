@@ -128,12 +128,14 @@ header p {
       padding: 26px;
     }
 
-    h2,
-    h3 {
-      margin-top: 0;
-      color: #7d6425;
-      font-family: Georgia, "Times New Roman", serif;
-    }
+  h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #7d6425;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+}
 
     .card h2 {
       font-size: 1.8rem;
@@ -145,11 +147,12 @@ header p {
       gap: 22px;
     }
 
-    .highlight {
-      color: #7d6425;
-      font-size: 1.35rem;
-      font-weight: 700;
-    }
+   .highlight {
+    color: #7d6425;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-align: center;
+}
 
    .muted {
     color: var(--muted);
@@ -158,7 +161,9 @@ header p {
 .assessment-contact {
     margin-top: 20px;
 }
-
+.small-card {
+    text-align: center;
+}
    .status-button {
     display: inline-block;
     margin-top: 12px;
@@ -203,9 +208,7 @@ header p {
     footer p {
       margin: 5px 0;
     }
-.assessment-contact {
-    margin-top: 20px;
-}
+
     @media (max-width: 600px) {
       header {
         padding: 42px 20px 38px;
@@ -251,10 +254,10 @@ header p {
 
   <main>
     <section id="welcome" class="card">
-      <h2>Welcome to Griffin Crossing</h2>
+      <h2>Welcome to Griffin Crossing!</h2>
 
       <p>
-        Welcome to the official website of Griffin Crossing Homeowners
+      Welcome to the official website of Griffin Crossing Homeowners
         Association.
       </p>
 
@@ -281,11 +284,20 @@ header p {
     </p>
 
     <p>
-        Assessments may now be paid securely online through Stripe. Griffin
-        Crossing Homeowners Association absorbs all payment-processing fees,
-        so homeowners pay exactly $150.00.
-    </p>
+        Assessments may be paid securely online through Stripe. Griffin Crossing
+    Homeowners Association absorbs all payment-processing fees, so homeowners
+    pay exactly <strong>$150.00 per property</strong>.
 
+Homeowners who prefer not to pay online may continue to submit payment by
+check or money order, payable to <strong>Griffin Crossing Homeowners
+Association</strong>, and mailed to the address below.
+    </p>
+<p class="muted">
+    <strong>Mail checks or money orders to:</strong><br>
+    Griffin Crossing Homeowners Association<br>
+    PO Box 8455<br>
+    Warner Robins, GA 31088
+</p>
     <p class="muted">
         During checkout, please enter the Griffin Crossing property address
         associated with the payment. Stripe will automatically email a receipt
@@ -395,18 +407,16 @@ header p {
 
     <section id="contact" class="card">
       <h2>Contact the Board</h2>
-
+  <p>
+        <strong>Financial and dues questions</strong><br>
+        <a href="mailto:treasurer@griffincrossingneighbors.org">
+          treasurer@griffincrossingneighbors.org
+        </a>
+  </p>
       <p>
         <strong>General inquiries</strong><br>
         <a href="mailto:board@griffincrossingneighbors.org">
           board@griffincrossingneighbors.org
-        </a>
-      </p>
-
-      <p>
-        <strong>Financial and dues questions</strong><br>
-        <a href="mailto:treasurer@griffincrossingneighbors.org">
-          treasurer@griffincrossingneighbors.org
         </a>
       </p>
 
