@@ -8,181 +8,182 @@
 
   <meta
     name="description"
-    content="Official website of Griffin Crossing Homeowners Association in Warner Robins, Georgia. Find association updates, contact information, meeting details, and annual dues information."
+    content="Official website of Griffin Crossing Homeowners Association in Macon, Georgia. Find association updates, contact information, meeting details, and annual dues information."
   >
 
-  <style>
-    :root {
-      --green-dark: #233f2b;
-      --green: #2f5038;
-      --green-hover: #223c2a;
-      --cream: #f4f1e9;
-      --white: #ffffff;
-      --text: #243128;
-      --muted: #687269;
-      --border: #e5e0d5;
-      --shadow: rgba(37, 49, 40, 0.08);
+  :root {
+    --black: #111111;
+    --charcoal: #1d1d1d;
+    --gold: #B08D3A;
+    --gold-light: #D4AF37;
+    --cream: #F5F1E8;
+    --text: #2c2c2c;
+    --shadow: rgba(0,0,0,.18);
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Georgia, "Times New Roman", serif;
+    background:var(--cream);
+    color:var(--text);
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(180deg,var(--black),var(--charcoal));
+    color:white;
+    text-align:center;
+    padding:60px 20px 50px;
+    border-bottom:4px solid var(--gold);
+}
+
+.logo{
+    width:180px;
+    max-width:90%;
+    margin-bottom:20px;
+}
+
+header h1{
+    margin:0;
+    color:var(--gold-light);
+    font-size:clamp(2.2rem,5vw,4rem);
+    letter-spacing:.5px;
+}
+
+header p{
+    margin-top:12px;
+    font-size:1.1rem;
+    color:#dddddd;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:var(--black);
+    border-bottom:2px solid var(--gold);
+}
+
+.nav-inner{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:28px;
+    padding:14px 20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.2s;
+}
+
+nav a:hover{
+    color:var(--gold-light);
+}
+
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px 70px;
+}
+
+section{
+    margin-bottom:28px;
+}
+
+.card,
+.small-card{
+    background:white;
+    border-radius:12px;
+    border-top:5px solid var(--gold);
+    padding:30px;
+    box-shadow:0 8px 20px var(--shadow);
+}
+
+.card h2,
+.small-card h3{
+    color:var(--gold);
+    margin-top:0;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:24px;
+}
+
+.highlight{
+    color:var(--gold);
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+.muted{
+    color:#666;
+}
+
+.status-button,
+.button{
+    display:inline-block;
+    margin-top:15px;
+    padding:14px 26px;
+    background:var(--gold);
+    color:white;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.status-button:hover,
+.button:hover{
+    background:#98772f;
+}
+
+a{
+    color:#7c5f20;
+}
+
+footer{
+    background:var(--black);
+    color:#ddd;
+    text-align:center;
+    padding:30px 20px;
+    border-top:4px solid var(--gold);
+}
+
+footer p{
+    margin:5px;
+}
+
+@media(max-width:700px){
+
+    header{
+        padding:45px 20px;
     }
 
-    * {
-      box-sizing: border-box;
+    .logo{
+        width:140px;
     }
 
-    html {
-      scroll-behavior: smooth;
+    .nav-inner{
+        gap:15px;
+        font-size:.9rem;
     }
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--cream);
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #35583f, #1f3b29);
-      color: var(--white);
-      text-align: center;
-      padding: 90px 24px 80px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: clamp(2.3rem, 6vw, 4.5rem);
-      line-height: 1.1;
-      letter-spacing: -1px;
-    }
-
-    header p {
-      max-width: 720px;
-      margin: 18px auto 0;
-      font-size: 1.15rem;
-      opacity: 0.95;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: var(--white);
-      border-bottom: 1px solid #ddd8cc;
-    }
-
-    .nav-inner {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      max-width: 1050px;
-      margin: 0 auto;
-      padding: 14px 20px;
-    }
-
-    nav a {
-      color: var(--green);
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    nav a:hover,
-    nav a:focus {
-      text-decoration: underline;
-    }
-
-    main {
-      max-width: 1050px;
-      margin: 0 auto;
-      padding: 48px 20px 70px;
-    }
-
-    section {
-      margin-bottom: 28px;
-    }
-
-    .card,
-    .small-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      box-shadow: 0 8px 24px var(--shadow);
-    }
-
-    .card {
-      padding: 32px;
-    }
-
-    .small-card {
-      padding: 26px;
-    }
-
-    h2,
-    h3 {
-      margin-top: 0;
-      color: var(--green);
-    }
-
-    .card h2 {
-      font-size: 1.8rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 22px;
-    }
-
-    .highlight {
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: var(--green);
-    }
-
-    .muted {
-      color: var(--muted);
-    }
-
-    .status-button {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 15px 24px;
-      color: var(--white);
-      background: var(--green);
-      border-radius: 8px;
-      font-weight: 700;
-      cursor: default;
-    }
-
-    a {
-      color: #2f6240;
-    }
-
-    footer {
-      padding: 28px 20px;
-      color: var(--white);
-      background: var(--green-dark);
-      text-align: center;
-      font-size: 0.95rem;
-    }
-
-    footer p {
-      margin: 5px 0;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        padding: 70px 20px 60px;
-      }
-
-      .card {
-        padding: 24px;
-      }
-
-      .nav-inner {
-        gap: 14px;
-        font-size: 0.92rem;
-      }
-    }
+}
   </style>
 </head>
 
