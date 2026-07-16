@@ -155,21 +155,31 @@ header p {
       color: var(--muted);
     }
 
-    .status-button {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 14px 24px;
-      color: var(--white);
-      background: var(--gold);
-      border-radius: 7px;
-      font-weight: 700;
-      cursor: default;
-    }
-
+   .status-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 14px 24px;
+    color: var(--white);
+    background: var(--gold);
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.status-button:hover,
+.status-button:focus {
+    background: #8f732d;
+    transform: translateY(-1px);
+}
     a {
       color: #735b1f;
     }
-
+.small-card .status-button {
+    display: block;
+    width: 100%;
+    margin-top: 14px;
+    text-align: center;
+}
     footer {
       padding: 30px 20px;
       color: #e9e2d3;
@@ -236,76 +246,139 @@ header p {
       </p>
 
       <p>
-        We are currently expanding our online homeowner services. Additional
-        resources, Association documents, meeting information, and online
-        features will be added over the coming months.
+       This website serves as the Association's official source for meeting
+    information, HOA assessments, governing documents, community updates,
+    and Board communications. New features and homeowner resources will
+    continue to be added over time.
       </p>
     </section>
 
-    <section id="dues" class="card">
-      <h2>Annual HOA Dues</h2>
+<section id="dues" class="card">
+    <h2>2026 HOA Assessment</h2>
 
-      <p class="highlight">Annual dues are $150 per property.</p>
+    <p class="highlight">
+        The 2026 annual HOA assessment is <strong>$150.00 per property</strong>
+        and is due by <strong>August 31, 2026</strong>.
+    </p>
 
-      <p>
-        Secure online payments through Stripe will be available soon. The
-        Association will absorb online payment-processing fees, so homeowners
-        will pay exactly $150.
-      </p>
+    <p>
+        Annual assessments help fund the maintenance, operation, and
+        improvement of the Griffin Crossing community. Payments are applied
+        toward Association expenses as approved by the Board of Directors.
+    </p>
 
-      <p>
-        Once online payments are available, homeowners will be asked to provide
-        the Griffin Crossing property address associated with the payment.
-      </p>
+    <p>
+        Assessments may now be paid securely online through Stripe. Griffin
+        Crossing Homeowners Association absorbs all payment-processing fees,
+        so homeowners pay exactly $150.00.
+    </p>
 
-      <span class="status-button" aria-label="Online payments coming soon">
-        Online Payments Coming Soon
-      </span>
-    </section>
+    <p class="muted">
+        During checkout, please enter the Griffin Crossing property address
+        associated with the payment. Stripe will automatically email a receipt
+        once the payment has been successfully processed.
+    </p>
 
+    <a
+        class="status-button"
+        href="https://buy.stripe.com/14A9AS1UJ9QrbwXfRR43S00"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Pay the 2026 HOA Assessment securely through Stripe"
+    >
+        Pay 2026 HOA Assessment
+    </a>
+
+    <p class="muted" style="margin-top: 20px;">
+        <strong>Assessment questions?</strong> Contact the Treasurer at
+        <a href="mailto:treasurer@griffincrossingneighbors.org">
+            treasurer@griffincrossingneighbors.org
+        </a>.
+    </p>
+</section>  
+    
     <section id="meeting">
-      <div class="grid">
+    <div class="grid">
         <div class="small-card">
-          <h3>Next HOA Meeting</h3>
-          <p class="muted">
-            Meeting details will be posted here as soon as they are confirmed.
-          </p>
+            <h3>Upcoming HOA Meeting</h3>
+
+            <p class="highlight">
+                Tuesday, August 11, 2026<br>
+                6:30 PM
+            </p>
+
+            <p>
+                <strong>Porter Ellis Community Center</strong><br>
+                5987 Houston Road<br>
+                Macon, GA 31216
+            </p>
+
+            <p class="muted">
+                All Griffin Crossing homeowners are encouraged to attend.
+            </p>
         </div>
 
         <div class="small-card">
-          <h3>Community Updates</h3>
-          <p class="muted">
-            News, announcements, and neighborhood updates are coming soon.
-          </p>
+            <h3>Community Updates</h3>
+
+            <p>
+                The Association has launched online HOA assessment payments,
+                a new community website, and official Board email addresses.
+                Additional homeowner resources and governing documents will be
+                added as they become available.
+            </p>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
     <section id="resources">
-      <div class="grid">
+    <div class="grid">
+
         <div class="small-card">
-          <h3>Governing Documents</h3>
-          <p>
-            Association documents and homeowner resources will be added soon.
-          </p>
+            <h3>Governing Documents</h3>
+
+            <p>
+                Association documents and homeowner resources will be added soon.
+            </p>
         </div>
 
         <div class="small-card">
-          <h3>Meeting Minutes</h3>
-          <p>
-            Approved meeting minutes will be made available here.
-          </p>
+            <h3>Meeting Minutes</h3>
+
+            <p>
+                Approved meeting minutes will be made available here.
+            </p>
         </div>
 
         <div class="small-card">
-          <h3>Homeowner Forms</h3>
-          <p>
-            Maintenance requests, suggestions, and other homeowner forms will
-            be added as they become available.
-          </p>
+            <h3>Homeowner Forms</h3>
+
+            <p>
+                Use the links below to update your contact information or send
+                questions and suggestions to the Board.
+            </p>
+
+            <a
+                class="status-button"
+                href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=tawCdUEQgke4S-Rec1pMftO3QHwD57VDhN0EE8A4oAZUNTVaOUVIUFNBRTlLWERPMU5PMVVFMkhQSy4u"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Update Homeowner Contact Information
+            </a>
+
+            <a
+                class="status-button"
+                href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=tawCdUEQgke4S-Rec1pMftO3QHwD57VDhN0EE8A4oAZUQURVTFhQQzFGOU01MUxGVVFBVjJHNU1FMy4u"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Submit a Suggestion or Question
+            </a>
         </div>
-      </div>
-    </section>
+
+    </div>
+</section>
 
     <section id="contact" class="card">
       <h2>Contact the Board</h2>
@@ -332,17 +405,7 @@ header p {
       </p>
     </section>
 
-    <section class="card">
-      <h2>Payment and Refund Questions</h2>
-
-      <p>
-        Once online payments are available, payments will be applied to the
-        property address provided during checkout. Homeowners should contact
-        the Treasurer regarding duplicate payments, payment errors, or refund
-        requests.
-      </p>
-    </section>
-  </main>
+      </main>
 
   <footer>
     <p>© 2026 Griffin Crossing Homeowners Association</p>
