@@ -212,24 +212,34 @@
       margin: 5px 0;
     }
 
-    @media (max-width: 600px) {
-      header {
-        padding: 42px 20px 38px;
-      }
+   @media (max-width: 600px) {
+  header {
+    padding: 42px 20px 38px;
+  }
 
-      .logo {
-        width: min(250px, 82vw);
-      }
+  .logo {
+    width: min(250px, 82vw);
+  }
 
-      .card {
-        padding: 24px;
-      }
+  .card {
+    padding: 24px;
+  }
 
-      .nav-inner {
-        gap: 14px;
-        font-size: 0.92rem;
-      }
-    }
+  .nav-inner {
+    gap: 14px;
+    font-size: 0.92rem;
+  }
+}
+
+.resources-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 700px) {
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 
@@ -424,8 +434,8 @@
 
     <!-- HOMEOWNER RESOURCES -->
 
-    <section id="resources">
-      <div class="grid">
+<section id="resources">
+  <div class="grid resources-grid">
 
         <div class="small-card">
           <h3>Governing Documents</h3>
